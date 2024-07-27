@@ -1,3 +1,7 @@
+import warnings
+# Suppress specific warnings
+warnings.filterwarnings("ignore", category=UserWarning, message="Could not import submodules")
+
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
